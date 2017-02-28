@@ -37,6 +37,7 @@ class MY_Model extends CI_Model {
         $query = $this->db->get_where($this::DB_TABLE, array(
             $this::DB_TABLE_PK => $id,
         ));
+        
         $this->populate($query->row());
     }
     
